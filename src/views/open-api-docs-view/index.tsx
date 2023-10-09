@@ -39,11 +39,14 @@ function OpenApiDocsView({
 	versionSwitcherProps,
 	isVersionedUrl,
 }: OpenApiDocsViewProps) {
+	const defaultHomeLink = "/" + productData.slug	
+	const homeLinkText = productData.name
+  const homeLinkUrl = productData.homePath ? productData.homePath : defaultHomeLink
 	return (
 		<SidebarLayout
 			sidebarSlot={
 				<>
-					<SidebarBackToLink text="HashiCorp Cloud Platform" href="/hcp" />
+					<SidebarBackToLink text={homeLinkText} href={homeLinkUrl} />
 					<OpenApiSidebarContents
 						navItems={navItems}
 						navResourceItems={navResourceItems}

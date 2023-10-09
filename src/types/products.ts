@@ -149,6 +149,7 @@ interface ProductData extends Product {
 	algoliaConfig: {
 		indexName: string
 	}
+	homePath: string
 	basePaths: string[]
 	rootDocsPaths: RootDocsPath[]
 	/**

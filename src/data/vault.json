@@ -1,8 +1,9 @@
 {
 	"name": "Vault",
 	"slug": "vault",
-	"version": "1.9.3",
-	"changelogUrl": null,
+	"version": "1.15.x",
+	"changelogUrl": "https://github.com/hashicorp/vault/tree/main/changelog",
+	"homePath": "/vault/docs",
 	"algoliaConfig": {
 		"indexName": "product_VAULT",
 		"searchOnlyApiKey": "9c555e8fa951c1c53e726c0ce2eb3b73"
